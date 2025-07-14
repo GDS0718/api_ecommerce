@@ -27,8 +27,8 @@ export const UsuarioController = {
         try {
             const user = UsuarioServices.getOne(Number(req.body))
             res.status(201).json(user)
-        } catch (error){
-            res.status(500).json({error: serverErro, desc: error})
+        } catch {
+            res.status(500).json({error: serverErro})
         }
     },
     async update(req: Request, res: Response): Promise<void>{
@@ -47,8 +47,8 @@ export const UsuarioController = {
                 res.status(404).json({error: notFound})
 
             res.json("Recurso deletado com sucesso")
-        } catch {
-            res.status(500).json({error: serverErro})
+        } catch (error){
+            res.status(500).json({error: serverErro, desc: error})
         }
     },
 }
