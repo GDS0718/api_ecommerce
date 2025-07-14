@@ -39,8 +39,8 @@ AppDataSource.initialize()
     app.use('/produtos', ProdutoRoutes)
     app.use('/usuarios', routeUser)
     app.use("/login", routeLogin)
-    app.listen(process.env.API_PORT, () => {
-        console.log("servidor produtos na porta", process.env.API_PORT);
+    app.listen(process.env.PORT, () => {
+        console.log("servidor produtos na porta", process.env.PORT);
     })
 })
 
