@@ -1,0 +1,26 @@
+Os middlewares do Express.js são funções executadas
+na sequência do ciclo de requisição e resposta
+(request → middleware(s) → response). 
+Eles permitem manipular a requisição, resposta,
+executar lógica de autenticação, validação, log etc.
+
+exercicio para casa:
+- criar um crud para usuario
+    - listar usuario
+    - adicionar
+    - editar
+    - deletar
+
+campos da tabela: id, nome, email, password, token
+
+CORS - NAVEGADOR
+CORS(CROSS-ORIGIN RESOURCES SHARING) É UM MECANISMO DE SEGURANÇA DOS NAVEGADORES QUE IMPEDE
+REQUISIÇÕES ENTRE ORIGENS DIFERENTES, A MENOS QUE O SERVIDOR PERMITA EXPLICITAMENTE
+
+FRONTEND: http//localhost:4000
+BACKEND: http//localhost:3000
+
+SEM CONFIGURAR O CORS O NAVEGADOR VAI BLOQUEAR ESSAS REQUISIÇÕES
+
+INSTALAÇÃO
+npm install cors

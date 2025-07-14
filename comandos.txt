@@ -1,0 +1,2 @@
+npx typeorm migration:generate [caminho_da_pasta] => cria uma migrate (arquivos para gerar as tabelas no banco de dados)
+npm install Express
