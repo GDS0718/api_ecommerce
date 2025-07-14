@@ -5,7 +5,7 @@ import { authJwt } from "../middlewares/aurhjwt";
 const routes = Router()
 routes.get("/",authJwt , UsuarioController.getAll)
 routes.get("/:id", authJwt ,UsuarioController.getOne)
-routes.post("/", authJwt ,UsuarioController.create)
+routes.post("/", UsuarioController.create)
 routes.put("/:id", authJwt ,UsuarioController.update)
 routes.delete("/:id", authJwt ,UsuarioController.delete)
 
