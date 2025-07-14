@@ -27,8 +27,8 @@ export const UsuarioController = {
         try {
             const user = UsuarioServices.getOne(Number(req.body))
             res.status(201).json(user)
-        } catch {
-            res.status(500).json({error: serverErro})
+        } catch (error){
+            res.status(500).json({error: serverErro, desc: error})
         }
     },
     async update(req: Request, res: Response): Promise<void>{
